@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body, #root{
+    width: 100%;
+    height: 100vh;
+    background-color: #2E5077;
+}
+
+.flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.App{
+    @extend .flexCenter;
+
+    height: 100%;
+    width: 100%;
+
+}
