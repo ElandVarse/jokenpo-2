@@ -12,9 +12,9 @@ function Fliper() {
             </div>
 
             <div className="btnContainer">
-                {/* <Button />
                 <Button />
-                <Button /> */}
+                <Button />
+                <Button />
             </div>
         </div>
     )

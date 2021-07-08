@@ -1,7 +1,12 @@
+$baseColor:#91E058;
+$darkBaseColor: #63993d;
+
 .screenBorders{
     padding: 60px;
-    border-radius: 16px;
-    background-color: #91E058;
+    background-color: $baseColor;
+    border-radius: 10%;
+    border-bottom: 24px solid $darkBaseColor;
+    border-left: 24px solid $darkBaseColor;
     box-shadow: 16px 16px 16px #00000055;
 
     display: flex;
@@ -14,48 +19,36 @@
 
     .screen {
         background-color: #000000aa;
-        border-radius: 8px;
+        border-right: 16px solid $darkBaseColor;
+        border-top: 16px solid $darkBaseColor;
+        border-radius: 6%;
 
         height: 100%;
         width: 100%;
-
-
     }
 
     .btnContainer{
         display: flex;
+        align-items: center;
         justify-content: center;
-
-        // .btn {
-        //     margin-top: 40px;
-        //     margin-right: 20px;
-        //     margin-left: 20px;
-
-        //     height: 120px;
-        //     width: 120px;
-        //     background-color: #23947D;
-        //     border-radius: 50%;
-
-        //     @media only screen and (max-width: 640px) {
-        //         background-color: red;
-        //     }
-        // }
-       
     }
 }
 
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 900px) {
+    .screenBorders{
+        width: 90vw;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
     .screenBorders{
         height: 100vh;
         width: 100vw;
         border-radius: 0;
-        
-        .screen {
-            background-color: red;
-            
-            .btnContainer{
-                background-color: red;
-            }
-        }
+        padding: 36px;
+
+        border: 0
     }
 }
