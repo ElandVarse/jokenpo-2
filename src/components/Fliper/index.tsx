@@ -4,7 +4,15 @@ import './styles.scss';
 
 import Button from '../Button/index';
 
+import rockImg from "../../assets/rock.png"
+import scissorImg from "../../assets/scissor.png"
+import paperImg from "../../assets/paper.png"
+
 function Fliper() {
+    const rock = rockImg;
+    const scissor = scissorImg;
+    const paper = paperImg;
+    
     return (
         <div className="screenBorders">
             <div className="screen">
@@ -12,9 +20,9 @@ function Fliper() {
             </div>
 
             <div className="btnContainer">
-                <Button />
-                <Button />
-                <Button />
+                <Button imgName={rock}/>
+                <Button imgName={paper}/>
+                <Button imgName={scissor}/>
             </div>
         </div>
     )

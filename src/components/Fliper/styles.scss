@@ -2,7 +2,7 @@ $baseColor:#91E058;
 $darkBaseColor: #63993d;
 
 .screenBorders{
-    padding: 60px;
+    padding: 60px 60px 0 60px;
     background-color: $baseColor;
     border-radius: 10%;
     border-bottom: 24px solid $darkBaseColor;
@@ -34,6 +34,11 @@ $darkBaseColor: #63993d;
     }
 }
 
+@media screen and (max-width: 1300px) {
+    .screenBorders{
+        width: 60vw;
+    }
+}
 
 @media screen and (max-width: 900px) {
     .screenBorders{
@@ -49,6 +54,6 @@ $darkBaseColor: #63993d;
         border-radius: 0;
         padding: 36px;
 
-        border: 0
+        border: 0;
     }
 }
