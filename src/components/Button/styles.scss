@@ -1,5 +1,5 @@
-$buttonColor: #E04C5B;
-$secondaryButtonColor: #942B35;
+$buttonColor: #d66253;
+$secondaryButtonColor: #8f403a;
 
 .btnContainer {
     text-align: center;
@@ -40,6 +40,10 @@ $secondaryButtonColor: #942B35;
         &:active {
             border-bottom-width: 0;
             border-left-width: 0;
+        }
+
+        img {
+            filter: opacity(0.8);
         }
     }
 }

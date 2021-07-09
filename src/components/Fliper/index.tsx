@@ -14,17 +14,19 @@ function Fliper() {
     const paper = paperImg;
     
     return (
-        <div className="screenBorders">
-            <div className="screen">
+        <main className="base">
+            <div className="soundExit"></div>
 
-            </div>
+            <section className="screenDisplay">
 
-            <div className="btnContainer">
+            </section>
+
+            <section className="btnContainer">
                 <Button imgName={rock}/>
                 <Button imgName={paper}/>
                 <Button imgName={scissor}/>
-            </div>
-        </div>
+            </section>
+        </main>
     )
 }
 

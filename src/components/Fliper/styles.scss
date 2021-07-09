@@ -1,8 +1,8 @@
 $baseColor:#91E058;
 $darkBaseColor: #63993d;
 
-.screenBorders{
-    padding: 60px 60px 0 60px;
+.base{
+    padding: 20px 60px;
     background-color: $baseColor;
     border-radius: 10%;
     border-bottom: 24px solid $darkBaseColor;
@@ -11,18 +11,27 @@ $darkBaseColor: #63993d;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     
     height: 90%;
     width: 40%;
 
-    .screen {
+    .soundExit{
+        background-color: $darkBaseColor;
+        width: 30%;
+        min-width: 80px;
+        height: 24px;
+        border-radius: 8px;
+    }
+
+    .screenDisplay {
         background-color: #000000aa;
         border-right: 16px solid $darkBaseColor;
         border-top: 16px solid $darkBaseColor;
         border-radius: 6%;
 
+        margin-top: 20px;
         height: 100%;
         width: 100%;
     }
@@ -35,20 +44,19 @@ $darkBaseColor: #63993d;
 }
 
 @media screen and (max-width: 1300px) {
-    .screenBorders{
+    .base{
         width: 60vw;
     }
 }
 
 @media screen and (max-width: 900px) {
-    .screenBorders{
+    .base{
         width: 90vw;
     }
 }
 
-
 @media screen and (max-width: 600px) {
-    .screenBorders{
+    .base{
         height: 100vh;
         width: 100vw;
         border-radius: 0;
