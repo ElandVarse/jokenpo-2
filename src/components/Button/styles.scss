@@ -1,15 +1,15 @@
-$buttonColor: #d66253;
-$secondaryButtonColor: #8f403a;
+// $buttonColor: #5397d6;
+// $secondaryButtonColor: #3a588f;
 
 .btnContainer {
     text-align: center;
     margin: 16px 0;
-    
+
     .btn {
-        background-color: $buttonColor;
+        // background-color: $buttonColor;
         border: none;
-        border-bottom: 0.5em solid $secondaryButtonColor;
-        border-left: 0.5em solid $secondaryButtonColor;
+        border-bottom: 0.5em solid;
+        border-left: 0.5em solid;
         border-radius: 0.5em;
         cursor: pointer;
         color: #fff;
@@ -32,7 +32,9 @@ $secondaryButtonColor: #8f403a;
     
         border-bottom-left-radius: 0.75em;
         border-bottom-right-radius: 0.75em;
-    
+        
+
+
         &:hover {
             filter: brightness(1.25);
         }
@@ -45,6 +47,7 @@ $secondaryButtonColor: #8f403a;
         img {
             filter: opacity(0.8);
         }
+
     }
 }
 
