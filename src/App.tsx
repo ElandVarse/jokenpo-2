@@ -1,12 +1,10 @@
 import React from 'react';
 
-import Fliper from './components/Fliper';
+import Base from './pages/Base';
 
 function App() {
     return (
-        <div className="App">
-            <Fliper />
-        </div>
+        <Base />
     );
 }
 

@@ -26,21 +26,18 @@ $darkBaseColor: #63993d;
     }
 
     .screenDisplay {
-        background-color: #000000aa;
+        background-color: #191919;
         border-right: 16px solid $darkBaseColor;
         border-top: 16px solid $darkBaseColor;
         border-radius: 6%;
+
 
         margin-top: 20px;
         height: 100%;
         width: 100%;
     }
 
-    .btnContainer{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+
 }
 
 @media screen and (max-width: 1300px) {

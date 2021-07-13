@@ -16,10 +16,15 @@ html, body, #root{
     justify-content: center;
 }
 
-.App{
+#root{
     @extend .flexCenter;
 
     height: 100%;
     width: 100%;
+}
 
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }

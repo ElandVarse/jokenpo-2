@@ -47,7 +47,38 @@
         img {
             filter: opacity(0.8);
         }
+    }
 
+    .btnEnemy {
+            // background-color: $buttonColor;
+            border: none;
+            border-bottom: 0.5em solid;
+            border-left: 0.5em solid;
+            border-radius: 0.5em;
+            color: #fff;
+        
+            font-size: 1rem;
+            font-family: Courier, sans-serif;
+        
+            width: 120px;
+            height: 120px; 
+        
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        
+            margin: 0 8px;
+            text-decoration: none;
+        
+            transition: .1s all ease-in-out;
+            position: relative;
+        
+            border-bottom-left-radius: 0.75em;
+            border-bottom-right-radius: 0.75em;
+    
+            img {
+                filter: opacity(0.8);
+            }
     }
 }
 
