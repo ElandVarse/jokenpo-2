@@ -8,6 +8,8 @@ import rockImg from "../../assets/rock.png"
 import scissorImg from "../../assets/scissor.png"
 import paperImg from "../../assets/paper.png"
 
+import Game from './Game';
+
 function Fliper() {
     const rock = rockImg;
     const scissor = scissorImg;
@@ -18,7 +20,7 @@ function Fliper() {
             <div className="soundExit"></div>
 
             <section className="screenDisplay">
-
+                <Game />     
             </section>
 
             <section className="btnContainer">
