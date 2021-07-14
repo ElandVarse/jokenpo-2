@@ -50,18 +50,16 @@
     }
 
     .btnEnemy {
-            // background-color: $buttonColor;
             border: none;
             border-bottom: 0.5em solid;
-            border-left: 0.5em solid;
             border-radius: 0.5em;
             color: #fff;
         
             font-size: 1rem;
             font-family: Courier, sans-serif;
         
-            width: 120px;
-            height: 120px; 
+            width: 100px;
+            height: 100px; 
         
             display: flex;
             align-items: center;
@@ -75,6 +73,8 @@
         
             border-bottom-left-radius: 0.75em;
             border-bottom-right-radius: 0.75em;
+
+            animation: move .5s infinite linear forwards;
     
             img {
                 filter: opacity(0.8);

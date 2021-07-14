@@ -1,15 +1,15 @@
 import React from 'react'
 
 import './styles.scss';
-import '@src/global.scss';
+import '@src/styles/global.scss';
 
-import Button from '../../components/Button/index';
+import Button from '@components/Buttons/index';
 
-import rockImg from "../../assets/rock.png"
-import scissorImg from "../../assets/scissor.png"
-import paperImg from "../../assets/paper.png"
+import rockImg from "@assets/rock.png"
+import scissorImg from "@assets/scissor.png"
+import paperImg from "@assets/paper.png"
 
-import InnerScreen from '../../components/Game';
+import InnerScreen from '../components/innerScreen';
 
 function Base() {
     const rock = rockImg;

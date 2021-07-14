@@ -1,10 +1,10 @@
-import React from 'react';
-
-import Base from './pages/Base';
+import Base from './Base';
 
 function App() {
     return (
-        <Base />
+        <>
+            <Base />
+        </>
     );
 }
 

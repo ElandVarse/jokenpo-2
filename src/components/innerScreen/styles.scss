@@ -11,16 +11,14 @@
     align-items: center;
     justify-content: center;
 
-    h1{
-        color: #ffe54f;
-        font-size: 4rem;
-        font-family: 'Yusei Magic', sans-serif;
+    > * {
+        filter: opacity(0.6);
     }
 
-    h2{
-        color: #ffd700dd;
+    h1{
+        color: #a5a5a5;
+        font-size: 4rem;
         font-family: 'Yusei Magic', sans-serif;
-
     }
 }
 

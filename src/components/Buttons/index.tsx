@@ -2,6 +2,8 @@ import React from 'react'
 
 import './styles.scss'
 
+import '@src/styles/animation.scss'
+
 interface Props {
     imgName: string;
     
@@ -11,7 +13,7 @@ interface Props {
     btnType: string;
 }
 
-const Button: React.FC<Props> = ({ imgName, buttonColor, secButtonColor, btnType}) => {
+const Buttons: React.FC<Props> = ({ imgName, buttonColor, secButtonColor, btnType}) => {
     return (
         <div className="btnContainer">
             <button className={btnType} style={{backgroundColor: `${buttonColor}`, borderColor: `${secButtonColor}`}}>
@@ -21,4 +23,4 @@ const Button: React.FC<Props> = ({ imgName, buttonColor, secButtonColor, btnType
     )
 }
 
-export default Button
+export default Buttons

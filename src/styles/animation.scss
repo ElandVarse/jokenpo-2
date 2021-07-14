@@ -1,0 +1,59 @@
+@keyframes move {
+    // 0% {
+    //     top: 0px;
+    //     left: 0px;
+    // }
+
+    0%{
+        top: -5px;
+        left: 5px;
+    }
+
+    35% {
+        top: -10px;
+        left: 0px;
+    }
+
+    50% {
+        top: 0px;
+        left: -5px;
+    }
+
+    75% {
+        top: 5px;
+        left: 0px;
+    }
+
+    90%{
+        top: 0px;
+        left: 10px;
+    }
+
+    100%{
+        top: -5px;
+        left: 5px;
+    }
+
+    //     top: -40px;
+    //     left: -20px;
+    //     background-color: #654a97;
+    //     border-color: #453368;
+    // }
+
+    // 75% {
+    //     top: -20px;
+    //     left: -20px;
+    // }
+
+    // 90% {
+    //     top: 20px;
+    //     left: 0px;
+    // }
+  
+    // 100% {
+    //     background-color: #cacaca;
+    //     border-color: #646464;
+    //     top: -20px;
+    //     left: 20px;
+    // }
+}
