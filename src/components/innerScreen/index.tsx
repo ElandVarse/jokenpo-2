@@ -4,30 +4,23 @@ import "./styles.scss"
 import "@src/styles/animation.scss"
 import '@src/styles/global.scss';
 
-import enemy from '@src/assets/enemy.png' 
-import rockImg from "../../assets/rockEnemy.png"
-import scissorImg from "../../assets/scissorEnemy.png"
-import paperImg from "../../assets/paperEnemy.png"
+import enemy from '@src/assets/enemyFolder/enemy.png' 
 
-import Buttons from '@components/Buttons'
+import Button from '@components/Button'
 
 function InnerScreen() {
-    const rock = rockImg;
-    const scissor = scissorImg;
-    const paper = paperImg;
-
     return (
         <div className="innerScreen">
             <h1>CHOOSE</h1>
 
             <div className="row">
-                <Buttons btnType="btnEnemy" imgName={scissor}   buttonColor={'#cacaca'}    secButtonColor={'#646464'}/>
-                <img className="enemy" src={enemy} alt="enemy" height="240px" width="240px" />
-                <Buttons btnType="btnEnemy" imgName={rock}      buttonColor={'#cacaca'}    secButtonColor={'#646464'}/>
+                <Button btnType="enemyForm" imgName={'scissorEnemy'}/>
+                <img  className="wizardComputer" src={enemy} alt="enemy" height="240px" width="240px" />
+                <Button btnType="enemyForm" imgName={'rockEnemy'}   />
             </div>
 
             <div className="row">
-                <Buttons btnType="btnEnemy" imgName={paper}     buttonColor={'#cacaca'}    secButtonColor={'#646464'}/>
+                <Button btnType="enemyForm" imgName={'paperEnemy'}  />
             </div>
         </div>
     )

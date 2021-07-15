@@ -1,9 +1,4 @@
 @keyframes move {
-    // 0% {
-    //     top: 0px;
-    //     left: 0px;
-    // }
-
     0%{
         top: -5px;
         left: 5px;
@@ -17,6 +12,7 @@
     50% {
         top: 0px;
         left: -5px;
+        background-color: red !important;
     }
 
     75% {
@@ -33,27 +29,24 @@
         top: -5px;
         left: 5px;
     }
+}
 
-    //     top: -40px;
-    //     left: -20px;
-    //     background-color: #654a97;
-    //     border-color: #453368;
-    // }
+@keyframes littleRotate {
+    0% {
+        transform: rotate(0deg);
+    }
 
-    // 75% {
-    //     top: -20px;
-    //     left: -20px;
-    // }
+    50% {
+        transform: rotate(10deg)
+    }
 
-    // 90% {
-    //     top: 20px;
-    //     left: 0px;
-    // }
-  
-    // 100% {
-    //     background-color: #cacaca;
-    //     border-color: #646464;
-    //     top: -20px;
-    //     left: 20px;
-    // }
+    75%{
+        transform: rotate(-10deg);
+        background-color: red !important;
+
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
 }

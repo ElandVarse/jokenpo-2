@@ -1,0 +1,124 @@
+$scissorColorPrimary: #E04C5B; 
+$scissorColorSecondary: #92323b;
+
+$rockColorPrimary: #617A67;
+$rockColorSecondary: #3c4b3f;
+
+$PaperColorPrimary: #6E7EE0;
+$PaperColorSecondary: #4d5797;
+
+
+
+.btnContainer {
+    margin: 16px 0;
+
+    %buttonForm {
+        background-size: 80% 80%;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+        border: none;
+        border-left: 0.5em solid;
+        border-bottom: 0.5em solid;
+        border-radius: 0.5em;
+    
+        cursor: pointer;
+        color: #fff;
+    
+        font-size: 1rem;
+        font-family: Courier, sans-serif;
+    
+        width: 120px;
+        height: 120px; 
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        margin: 0 8px;
+        text-decoration: none;
+    
+        transition: .1s all ease-in-out;
+        position: relative;
+    }
+
+    .playerForm {
+        @extend %buttonForm;
+        &:hover {
+            filter: brightness(1.25);
+        }
+        &:active {
+            border-bottom-width: 0;
+            border-left-width: 0;
+        }
+    }
+
+    .enemyForm {
+        @extend %buttonForm;
+        cursor: unset;
+        width: 100px;
+        height: 100px; 
+        animation: move .5s infinite linear forwards;
+
+        img {
+            filter: opacity(0.8);
+        }
+    }
+}
+
+%scissorColor {
+    background-color: $scissorColorPrimary;
+    border-color: $scissorColorSecondary !important;
+}
+
+%paperColor {
+    background-color: $PaperColorPrimary;
+    border-color: $PaperColorSecondary !important;
+}
+
+%rockColor{
+    background-color: $rockColorPrimary;
+    border-color: $rockColorSecondary !important;
+}
+
+// ---------------PLAYER-----------------
+
+.rockPlayer {
+    @extend %rockColor;
+    background-image: url('../../assets/rock.png')
+}
+
+.scissorPlayer{
+    @extend %scissorColor;
+    background-image: url('../../assets/scissor.png')
+}
+
+.paperPlayer {
+    @extend %paperColor;
+    background-image: url('../../assets/paper.png')
+}
+
+// ---------------ENEMY-----------------
+
+.rockEnemy {
+    @extend %rockColor;
+    background-image: url('../../assets/enemyFolder/rockEnemy.png');
+}
+
+.scissorEnemy{
+    @extend %scissorColor;
+    background-image: url('../../assets/enemyFolder/scissorEnemy.png');
+}
+
+.paperEnemy {
+    @extend %paperColor;
+    background-image: url('../../assets/enemyFolder/paperEnemy.png');
+}
+
+
+@media screen and (max-width: 600px) {
+    .btn {
+        height: 80px;
+        width: 80px;
+    }   
+}

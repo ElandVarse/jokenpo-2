@@ -2,7 +2,7 @@ $baseColor:#91E058;
 $darkBaseColor: #63993d;
 $darkerBaseColor: #3b5a25;
 
-.base{
+.app{
     padding: 20px 60px;
     background-color: $baseColor;
     border-radius: 10%;
@@ -12,17 +12,15 @@ $darkerBaseColor: #3b5a25;
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     
-    height: 90%;
-    width: 640px;
+    width: 700px;
 
     .soundExit{
         background-color: $darkBaseColor;
         width: 30%;
         min-width: 80px;
-        height: 24px;
+        height: 16px;
         border-radius: 8px;
     }
 
@@ -35,30 +33,12 @@ $darkerBaseColor: #3b5a25;
         filter: brightness(1.5);
         margin-top: 20px;
         height: 100%;
-        width: 540px;
+        width: 92%;
     }
 }
 
-@media screen and (max-width: 1300px) {
-    .base{
-        width: 60vw;
-    }
-}
-
-@media screen and (max-width: 1100px) {
-    .base{
-        width: 70vw;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .base{
-        width: 90vw
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .base{
+@media screen and (max-width: 700px) {
+    .app{
         height: 100vh;
         width: 100vw;
         border-radius: 0;
@@ -69,6 +49,7 @@ $darkerBaseColor: #3b5a25;
         .screenDisplay {
             border: none;
             border-radius: 0;
+            width: 100%;
         }
     
         .soundExit {

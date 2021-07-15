@@ -4,7 +4,6 @@
     height: 100%;
     width: 100%;
 
-    border-radius: 28px;
 
     display: flex;
     flex-direction: column;
@@ -16,9 +15,18 @@
     }
 
     h1{
-        color: #a5a5a5;
+        color: #5a8678;
         font-size: 4rem;
         font-family: 'Yusei Magic', sans-serif;
+
+        text-shadow:  
+        -6px 6px 0 #00000088;
+
+    }
+
+    .wizardComputer {
+        padding: 20px;
+        animation:  littleRotate 1s infinite linear forwards;
     }
 }
 
